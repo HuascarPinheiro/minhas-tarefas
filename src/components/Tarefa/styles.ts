@@ -94,6 +94,7 @@ export const Botao = styled.button`
   background-color: #2f3640;
   border-radius: 8px;
   margin-right: 8px;
+  margin-top: 12px;
 `
 
 export const BotaoSalvar = styled(Botao)`
