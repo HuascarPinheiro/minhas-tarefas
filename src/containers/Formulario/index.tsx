@@ -23,10 +23,17 @@ const Formulario = () => {
       prioridade,
       enums.Status.PENDENTE,
       descricao,
-      9
+      1
     )
 
-    dispatch(cadastrar(tarefaParaAdicionar))
+    dispatch(
+      cadastrar({
+        titulo,
+        prioridade,
+        descricao,
+        status: enums.Status.PENDENTE
+      })
+    )
     navigate('/')
   }
   return (
